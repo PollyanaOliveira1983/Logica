@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<input/>
+<button>Compare com o meu segredo</button>
+
+<script>
+    var segredo = 5;
+
+    //Utilizaremos a querySelector() para inserir aquilo que está no mundo HTML na variável input
+    var input = document.querySelector("input");
+
+    function verifica() {
+        //Para sabermos qual o valor que está inserido na variável, utilizaremos o input.value
+
+        if(input.value == segredo) {
+
+            alert("Você ACERTOU!");
+        } else {
+
+            alert("Você ERROU!!!!!!!!");
+        }
+
+    }
+
+    var button = document.querySelector("button");
+
+    button.onclick = verifica;
+
+</script>
